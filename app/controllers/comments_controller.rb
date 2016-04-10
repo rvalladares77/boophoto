@@ -5,11 +5,12 @@ class CommentsController < ApplicationController
 		@comment = @post.comments.build(comment_params)
 		@comment.user_id = current_user.id
 
-		logger.debug {"Person attributes hash: #{@comment.attributes.inspect}"}
-
+		#logger.debug {"Person attributes hash: #{@comment.attributes.inspect}"}
 		if @comment.save
-			flash[:success] = "You commented the hell out of that post!!"
-			redirect_to :back
+			respond_to do |format|
+          		format.html {redirect_to root_path}
+          		format.js
+			end
 		else
 			flash[:alert] = "Check the comment form, something went wrong."
 			render root_path
