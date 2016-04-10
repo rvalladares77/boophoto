@@ -21,14 +21,13 @@ class CommentsController < ApplicationController
 	def destroy
 		@comment = @post.comments.find(params[:id])
 
-		@comment.destroy
-		flash[:success] = "Your comment has been deleted :("
-		redirect_to root_path
-		#else
-	   	#	flash[:alert] = "Damn!!! something went wrong"
-		#	redirect_to root_path
-		#end
-
+		if @comment.user_id == current_user.id
+			@comment.delete
+			respond_to do |format|
+            	format.html { redirect_to root_path }
+            	format.js
+            end
+        end
 	end
 
 
