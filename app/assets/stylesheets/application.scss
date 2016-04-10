@@ -15,66 +15,72 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+html {
+	height:100%;
+}
+
 body {
 background-color: #fafafa;
 font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica,
 sans-serif;
 }
+
 /* ## NAVBAR CUSTOMISATIONS ## */
 .navbar-brand {
-a {
-color: #125688;
-}
+	a {
+	color: #125688;
+	}
 }
 .navbar-default {
-background-color: #fff;
-height: 54px;
-.navbar-nav li a {
-color: #125688;
-}
+	background-color: #fff;
+	height: 54px;
+	.navbar-nav li a {
+	color: #125688;
+	}
 }
 .navbar-container {
-width: 70%;
-margin: 0 auto;
+	width: 70%;
+	margin: 0 auto;
 }
 /* ## POST CUSTOMISATIONS ## */
 .posts-wrapper {
-padding-top: 40px;
-margin: 0 auto;
-max-width: 642px;
-width: 100%;
+	padding-top: 40px;
+	margin: 0 auto;
+	max-width: 642px;
+	width: 100%;
 }
 .post {
-background-color: #fff;
-border-color: #edeeee;
-border-style: solid;
-border-radius: 3px;
-border-width: 1px;
-margin-bottom: 60px;
-.post-head {
-flex-direction: row;
-height: 64px;
-padding-left: 24px;
-padding-right: 24px;
-padding-top: 24px;
-color: #125688;
-font-size: 15px;
-line-height: 18px;
-.user-name, .time-ago {
-display: inline;
-}
-.user-name {
-font-weight: 500;
-}
-.time-ago {
-color: #A5A7AA;
-float: right;
-}
-}
-.image {
-border-bottom: 1px solid #eeefef;
-border-top: 1px solid #eeefef;
-}
+	background-color: #fff;
+	border-color: #edeeee;
+	border-style: solid;
+	border-radius: 3px;
+	border-width: 1px;
+	margin-bottom: 60px;
+	.post-head {
+	flex-direction: row;
+	height: 64px;
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-top: 24px;
+	color: #125688;
+	font-size: 15px;
+	line-height: 18px;
+	.user-name, .time-ago {
+	display: inline;
+	}
+	.user-name {
+	font-weight: 500;
+	}
+	.time-ago {
+	color: #A5A7AA;
+	float: right;
+	}
+	}
+	.image {
+	border-bottom: 1px solid #eeefef;
+	border-top: 1px solid #eeefef;
+	}
 }
 .post-bottom {
 .user-name, .comment-content {
@@ -142,6 +148,89 @@ border-radius: 3px;
 margin-top: 20px;
 margin-bottom: 40px;
 }
+
+
+
+.registration-bg {
+	padding-top: 4em;
+	/*height: 100%;*/
+	background-image: image-url('truck.jpg');
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	 position: fixed;
+    width: 200%;
+    height: 200%;
+    left: -50%;
+
+
+}
+
+
+.log-in{
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+	border: none;
+}
+
+.panel {
+	border-radius:8px;
+}
+
+
+.panel-heading{
+	h1 {
+		text-align:center;
+	}
+}
+
+
+.navbar{
+	margin-bottom: 0px;
+}
+
+.alert{
+	margin-bottom: 0px;
+}
+
+.hint{
+	color:red;
+}
+
+
+
+.login-bg {
+	padding-top: 4em;
+	height: 100%;
+	background-image: image-url('login.jpg');
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: fixed;
+    width: 200%;
+    height: 200%;
+    left: -50%;
+}
+
+
+
+#image-preview {
+	margin: 0px auto;
+}
+#post_image {
+	padding: 1em;
+	margin: 0px auto;
+}
+
+
+
+
+
+
+
 
 
 
