@@ -15,6 +15,9 @@ Rails.application.routes.draw do
 
   resources :posts do
     resources :comments
+    member do
+      get 'like'
+    end
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
